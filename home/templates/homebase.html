@@ -1,0 +1,47 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+{% load static %}
+<!-- Mirrored from demo.hasthemes.com/lazio-preview/lazio/index-7.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Feb 2021 15:04:47 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="meta description">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/img/icon.png">
+    <title>Lazio - Multipurpose eCommerce Bootstrap 4 Template</title>
+
+    <!-- ************************* CSS Files ************************* -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="{%static 'assets/css/font-awesome.min.css' %}">
+
+    <!-- All Plugins CSS css -->
+    <link rel="stylesheet" href="{% static 'assets/css/plugins.css' %}">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
+
+    <!-- modernizr JS
+    ============================================ -->
+    <script src="{% static 'assets/js/vendor/modernizr-2.8.3.min.js' %}"></script>
+    <!--[if lt IE 9]>
+    <script src="{% static '//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js' %}"></script>
+    <script src="{% static '//oss.maxcdn.com/respond/1.4.2/respond.min.js' %}"></script>
+    <![endif]-->
+
+    {% block head %} {% endblock %}
+</head>
+
+<body>
+{% include 'header.html' %}
+{% block body %}{% endblock %}
+
+{% block foot %}{% endblock %}
+</body>
